@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="game-wrapper">
+    <h1>Tic Tac Toe</h1>
+    <p class="subtitle">You (X) vs Computer (O)</p>
+
+    <div style="margin-bottom: 12px;">
+      <label for="difficulty">Difficulty: </label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <div id="status"></div>
+
+    <div class="board" id="board">
+      <button class="cell" data-cell-index="0"></button>
+      <button class="cell" data-cell-index="1"></button>
+      <button class="cell" data-cell-index="2"></button>
+      <button class="cell" data-cell-index="3"></button>
+      <button class="cell" data-cell-index="4"></button>
+      <button class="cell" data-cell-index="5"></button>
+      <button class="cell" data-cell-index="6"></button>
+      <button class="cell" data-cell-index="7"></button>
+      <button class="cell" data-cell-index="8"></button>
+    </div>
+
+    <button id="reset-btn" class="reset-btn">Reset game</button>
+  </div>
+</body>
+</html>
